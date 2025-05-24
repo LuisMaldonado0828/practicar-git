@@ -10,6 +10,14 @@ def crear_matriz(filas, columnas):
         for j in range(columnas):
             row.append(int((input((f"Introduce el primer valor en la posición fila: {i} columna: {j}: ")))))
         numeros.append(row)
-    print(numeros)
+    return numeros
 
-crear_matriz(filas,columnas)
+matrix = crear_matriz(filas,columnas)
+
+#Mostrar matriz 
+def mostrar_matriz(matrix):
+    print("La matriz introducida es: ")
+    for i in range(len(matrix)):
+        print(matrix[i])
+
+mostrar_matriz(matrix)
